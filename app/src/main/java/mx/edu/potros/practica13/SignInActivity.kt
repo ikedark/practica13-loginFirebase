@@ -1,15 +1,14 @@
 package mx.edu.potros.practica13
 
-import android.content.ContentValues.TAG
+    import android.content.ContentValues.TAG
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import mx.edu.potros.practica13.databinding.ActivityMainBinding
 import mx.edu.potros.practica13.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
@@ -45,7 +44,7 @@ class SignInActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "createUserWithEmail:success")
-                    val user = auth.currentUser
+                    //val user = auth.currentUser
                     reload()
                 } else {
                     // If sign in fails, display a message to the user.
